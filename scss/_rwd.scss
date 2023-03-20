@@ -1,0 +1,243 @@
+//  網站大標題
+@media only screen and (min-width: 1601px){
+  .site-logo{
+    max-width: 1400px;
+    transform: translateY(60px);
+  }
+}
+@media only screen and (max-width: 1600px){
+  .site-logo{
+    max-width: 1400px;
+    transform: translateY(60px);
+  }
+}
+@media only screen and (max-width: 1430px){
+  .site-logo{
+    max-width: 1200px;
+  }
+}
+
+@media only screen and (max-width: 1200px){
+  .site-logo{
+    max-width: 900px;
+  }
+}
+
+@media only screen and (max-width: 920px){
+  .site-logo{
+    padding: 0 2em;
+    background-image: none;
+  }
+  .w-1200{
+    .break{
+      display: inline;
+    }
+  }
+}
+
+@media only screen and (max-width: 500px){
+  .site-logo{
+    padding: 0 1em;
+    transform: translateY(9vw);
+  }
+}
+@media only screen and (max-width: 450px){
+  .site-logo{
+    transform: translateY(10vw);
+  }
+}
+@media only screen and (max-width: 400px){
+  .site-logo{
+    transform: translateY(12vw);
+  }
+}
+@media only screen and (max-width: 370px){
+  .site-logo{
+    transform: translateY(13vw);
+  }
+}
+@media only screen and (max-width: 360px){
+  .site-logo{
+    transform: translateY(14vw);
+  }
+}
+
+// 小物件
+
+@media only screen and (max-width: 1000px){
+  // 噴泉、小木屋、鯊莎醬、木柵欄一、木柵欄二、柵欄三、柵欄四、路徑一、路徑二、小飛馬
+  .fountain,
+  .girl,
+  .wooden-house,
+  .fence-1,
+  .fence-2,
+  .fence-3,
+  .fence-4,
+  .path-1,
+  .path-2,
+  .pegasus{
+    display: none;
+  }
+  .tree-1{
+    top: -50px;
+    left: calc( 50% - 460px);
+  }
+  .tree-3{
+    top: 600px;
+    left: calc( 50% - 460px);
+  }
+  .tree-5{
+    top: 720px;
+    left: calc( 50% + 340px);
+  }
+}
+@media only screen and (max-width: 700px){
+  .tree-1,
+  .tree-2,
+  .tree-3,
+  .tree-4,
+  .tree-5{
+    display: none;
+  }
+  .tree-7{
+    position: absolute;
+    top: 500px;
+    left: calc( 50% - 285px);
+    width: 114px;
+    height: 109px;
+    background-image: url(../images/tree.png);
+    background-repeat: no-repeat;
+  }
+  .tree-8{
+    position: absolute;
+    top: 700px;
+    left: calc( 50% - 285px);
+    width: 114px;
+    height: 109px;
+    background-image: url(../images/tree.png);
+    background-repeat: no-repeat;
+  }
+  .tree-9{
+    position: absolute;
+    top: 900px;
+    left: calc( 50% - 285px);
+    width: 114px;
+    height: 109px;
+    background-image: url(../images/tree.png);
+    background-repeat: no-repeat;
+  }
+  .tree-10{
+    position: absolute;
+    top: 600px;
+    left: calc( 50% + 175px);
+    width: 114px;
+    height: 109px;
+    background-image: url(../images/tree.png);
+    background-repeat: no-repeat;
+  }
+  .tree-11{
+    position: absolute;
+    top: 800px;
+    left: calc( 50% + 175px);
+    width: 114px;
+    height: 109px;
+    background-image: url(../images/tree.png);
+    background-repeat: no-repeat;
+  }
+}
+@media only screen and (max-width: 400px){
+  .tree-7,
+  .tree-8,
+  .tree-9,
+  .tree-10,
+  .tree-11{
+    display: none;
+  }
+}
+
+// 指定福利
+@media only screen and (min-width: 0){
+  html, body{
+    font-size: 12px;
+  }
+  .games{
+    flex-wrap: wrap;
+    gap: 0;
+  }
+  .lrg-account{
+    grid-template-columns: 0.4fr 1fr;
+  }
+}
+
+@media only screen and (min-width: 500px){
+  html, body{
+    font-size: 14px;
+  }
+}
+@media only screen and (min-width: 700px){
+  html, body{
+    font-size: 16px;
+  }
+  .games{
+    flex-wrap: nowrap;
+    gap: 1rem;
+  }
+  .game-gift-list{
+    min-height: 200px;
+  }
+  .lrg-account{
+    grid-template-columns: 125px 1fr;
+  }
+}
+// @media only screen and (max-width: 701px){
+//   .game-gift-list{
+//     min-height: 200px;
+//   }
+// }
+
+// sub-title
+
+@media only screen and (min-width: 701px){
+  .sub-title{
+    background-position: center;
+  }
+}
+@media only screen and (max-width: 700px){
+  .sub-title{
+    background-position: center left;
+  }
+}
+@media only screen and (max-width: 500px){
+  .sub-title{
+    background-image: none;
+  }
+}
+
+// 領獎步驟&規則 and 舉例說明
+@media only screen and (max-width: 700px){
+  .two_fields{
+    flex-wrap: wrap;
+  }
+}
+
+// footer
+
+@media only screen and (max-width: 500px){
+  .footer{
+    .break{
+      display: block;
+    }
+  }
+}
+
+// popup
+@media only screen and (max-width: 500px){
+  .popup-content{
+    .popup-close{
+      width: 40px;
+      height: 40px;
+      top: -10px;
+      right: -10px;
+    }
+  }
+}

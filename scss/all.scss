@@ -1,0 +1,681 @@
+@charset "UTF-8";
+@import "initial";
+
+
+// 載入思源宋體 Medium
+// font-family: 'Noto Serif TC', serif;
+// font-weight: 500;
+
+// @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;700&display=swap');
+
+
+*{
+  box-sizing: border-box;
+  transition: all 0.3s;
+}
+
+body{
+  background-color: #6d992a;
+  background-image: url(../images/grass.png);
+  background-position: top center;
+}
+
+.ossian{
+  overflow: hidden;
+  margin: 0 auto;
+  padding: 0 1em;
+  max-width: 1920px;
+  width: 100%;
+  min-height: 100%;
+  // font-family: 'Noto Serif TC', serif;
+  font-weight: 500;
+  color: black;
+  background-color: #6d992a;
+  background-image: url(../images/grass.png);
+  background-position: top center;
+}
+
+// 網站大標題
+
+.site-logo{
+  margin: 0 auto;
+  // padding: 0 2em;
+  // max-width: 1400px;
+  text-align: center;
+  background-image: url(../images/fence.png);
+  background-repeat: repeat-x;
+  background-position: center 185px;
+  // transform: translateY(60px);
+  img{
+    
+    max-width: 736px;
+    width: 100%;
+  }
+}
+
+.fence-1{
+  margin: 0 auto;
+  max-width: 1400px;
+  padding: 79px 2em 0;
+  background-image: url(../images/fence.png);
+  background-repeat: repeat-x;
+  background-position: center bottom;
+  transform: translateY(279px);
+}
+
+// 黃土
+
+.loess{
+  // position: relative;
+  margin: 0 auto;
+  padding: 0;
+  background-color:#dfae52;
+  border: 20px solid transparent;
+  border-image: url(../images/border-bg.png) 20 20 round;
+  
+  &.w-1700{
+    padding-top: 3em;
+    padding-bottom: 1.5em;
+    max-width: 1700px;
+  }
+  &.w-1400{
+    max-width: 1300px;
+    // transform: translateY(-4px);
+  }
+  &.w-960{
+    position: relative;
+    max-width: 960px;
+    border-top-width: 0;
+    // border-bottom-width: 0;
+    transform: translateY(-4px);
+    &::before{
+      content: "";
+      position: absolute;
+      bottom: -30px;
+      width: 100%;
+      height: 20px;
+      background-color:#dfae52;
+    }
+  }
+  .empty{
+    margin: 0 auto;
+    padding: 0;
+    max-width: 954px;
+    width: 100%;
+    height: 20px;
+    background-color:#dfae52;
+    // border:1px solid red;
+    transform: translateY(-30px);
+  }
+  a{
+    color: #ca4a30;
+    &:hover{
+      color: white;
+      text-decoration: none;
+      background-color: #f3694d;
+    }
+  }
+}
+
+// 副標題
+.sub-title{
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url(../images/sub-title-line.png);
+  background-repeat: no-repeat;
+  // background-position: center;
+  img{
+    max-width: 349px;
+    width: 100%;
+  }
+}
+
+.content{
+  margin: 0 auto;
+  padding-top: 1em;
+  text-align: center;
+  font-size: 1.5em;
+  line-height: 1.5;
+  // border: 1px solid red;
+  &.w-1200{
+    max-width: 1200px;
+  }
+  &.w-620{
+    max-width: 620px;
+    &.pb-2{
+      padding-bottom: 2em;
+    }
+  }
+  .note{
+    padding-top: 1rem;
+    color: #815427;
+    font-size: 0.75em;
+  }
+  mark{
+    color: #ffe097;
+    background-color: #815427;
+  }
+}
+
+// 指定福利
+
+.games{
+  margin: 0 auto;
+  padding: 0;
+  display: flex;
+  // flex-wrap: nowrap;
+  align-items: stretch;
+  justify-content: center;
+  // gap: 1rem;
+  dd{
+    margin: 0;
+    // border: 1px solid red;
+  }
+}
+.game-title{
+  margin: 0;
+  padding: 0;
+  transform: translateY(1em);
+  img{
+    width: 100%;
+  }
+}
+.game-gift-list{
+  margin: 0;
+  padding: 1em 0.75em 0.75em;
+  list-style: none;
+  // min-height: 200px;
+  background-color: #ffe097;
+  border: 5px solid #70421d;
+  border-radius: 10px;
+  li{
+    text-align: initial;
+    padding-bottom: 0.5em;
+    background-image: url(../images/gift-list-line.png);
+    background-repeat: no-repeat;
+    background-position: bottom left;
+    background-size: contain;
+    background-size: unset;
+    em{
+      display: inline-block;
+      padding: 0.05em 0.5em;
+      font-size: 0.75em;
+      font-style: normal;
+      color: white;
+      background-color: #f3694d;
+      border-radius: 5em;
+    }
+    strong{
+      font-family: "Arial Black";
+      color: #f3694d;
+    }
+  }
+}
+.icon{
+  margin-right: 0.25em;
+  display: inline-block;
+  width: 27px;
+  height: 30px;
+  background-image: url(../images/list-image.png);
+  background-repeat: no-repeat;
+  transform: translateY(10px);
+}
+
+// 搖滾火箭帳號設定
+
+.lrg-account{
+  margin: 0;
+  padding: 0;
+  display: grid;
+  // grid-template-columns: 125px 1fr;
+  gap: 0.75rem;
+  dd{
+    margin: 0;
+    text-align: initial;
+    img{
+      width: 100%;
+    }
+  }
+}
+
+// 小木屋
+
+.wooden-house{
+  position: absolute;
+  top: 350px;
+  left: calc( 50% - 800px);
+  width: 423px;
+  height: 464px;
+  background-image: url(../images/wooden-house.png);
+  background-repeat: no-repeat;
+}
+
+// 鯊莎醬
+
+.girl{
+  position: absolute;
+  top: 570px;
+  left: calc( 50% - 600px);
+  width: 157px;
+  height: 241px;
+  background-image: url(../images/girl.png);
+  background-repeat: no-repeat;
+}
+
+// 路徑一
+
+.path-1{
+  position: absolute;
+  top: 910px;
+  left: calc( 50% - 860px);
+  width: 188px;
+  height: 203px;
+  background-image: url(../images/path-1.png);
+  background-repeat: no-repeat;
+}
+
+// 木柵欄一
+
+.fence-1{
+  position: absolute;
+  top: -320px;
+  left: calc( 50% - 750px);
+  width: 250px;
+  height: 79px;
+  background-image: url(../images/fence.png);
+  background-position: center right;
+}
+
+// 樹叢一
+
+.tree-1{
+  position: absolute;
+  top: -20px;
+  left: calc( 50% - 680px);
+  width: 114px;
+  height: 109px;
+  background-image: url(../images/tree.png);
+  background-repeat: no-repeat;
+}
+
+// 木柵欄三
+
+.fence-3{
+  position: absolute;
+  bottom: -10px;
+  left: calc( 50% - 630px);
+  width: 130px;
+  height: 79px;
+  background-image: url(../images/fence.png);
+  background-position: center right;
+}
+
+// 樹叢三
+
+.tree-3{
+  position: absolute;
+  top: 1200px;
+  left: calc( 50% - 600px);
+  width: 114px;
+  height: 109px;
+  background-image: url(../images/tree.png);
+  background-repeat: no-repeat;
+}
+
+// 噴泉
+
+.fountain{
+  position: absolute;
+  top: 420px;
+  left: calc( 50% + 400px);
+  width: 395px;
+  height: 364px;
+  background-image: url(../images/fountain.png);
+  background-repeat: no-repeat;
+}
+
+// 路徑二
+
+.path-2{
+  position: absolute;
+  top: 910px;
+  left: calc( 50% + 620px);
+  width: 298px;
+  height: 220px;
+  background-image: url(../images/path-2.png);
+  background-repeat: no-repeat;
+}
+
+// 木柵欄二
+
+.fence-2{
+  position: absolute;
+  top: -50px;
+  left: calc( 50% + 500px);
+  width: 250px;
+  height: 79px;
+  background-image: url(../images/fence.png);
+  background-position: center left;
+}
+
+// 木柵欄四
+
+.fence-4{
+  position: absolute;
+  bottom: -10px;
+  left: calc( 50% + 500px);
+  width: 130px;
+  height: 79px;
+  background-image: url(../images/fence.png);
+  background-position: center right;
+}
+
+// 樹叢二
+
+.tree-2{
+  position: absolute;
+  top: 60px;
+  left: calc( 50% + 340px);
+  width: 114px;
+  height: 109px;
+  background-image: url(../images/tree.png);
+  background-repeat: no-repeat;
+}
+
+// 樹叢四
+
+.tree-4{
+  position: absolute;
+  top: 1200px;
+  left: calc( 50% + 340px);
+  width: 114px;
+  height: 109px;
+  background-image: url(../images/tree.png);
+  background-repeat: no-repeat;
+}
+
+// 樹叢五
+
+.tree-5{
+  position: absolute;
+  top: 1200px;
+  left: calc( 50% + 500px);
+  width: 114px;
+  height: 109px;
+  background-image: url(../images/tree.png);
+  background-repeat: no-repeat;
+}
+
+// 小飛馬
+
+.pegasus{
+  position: absolute;
+  top: 1400px;
+  left: calc( 50% + 400px);
+  width: 177px;
+  height: 144px;
+  background-image: url(../images/pegasus.png);
+  background-repeat: no-repeat;
+}
+
+.now-btn-position{
+  padding: 2em 0 0;
+}
+.now-btn{
+  margin: 0 auto;
+  display: block;
+  max-width: 264px;
+  height: 136px;
+  text-decoration: none;
+  background-image:url(../images/now-btn-2.png);
+  background-repeat: no-repeat;
+  animation: flash 1s infinite;
+  cursor: pointer;
+  &:hover{
+    background-image:url(../images/now-btn-1.png);
+  }
+}
+
+@keyframes flash{
+  0%{
+    background-image:url(../images/now-btn-1.png);
+  }
+  50%{
+    background-image:url(../images/now-btn-2.png);
+  }
+  100%{
+    background-image:url(../images/now-btn-1.png);
+  }
+}
+
+// 領獎步驟&規則 and 舉例說明
+
+.two_fields{
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+  gap: 2em;
+  margin: 0 auto;
+  padding: 0;
+  max-width: 1500px;
+  width: 100%;
+  dd{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    font-size: 1.125em;
+    line-height: 1.5;
+    ul{
+      padding-left: 2em;
+    }
+    .box{
+      padding: 1em;
+    }
+  }
+}
+
+// footer
+
+.footer{
+  padding: 3em 1em;
+  text-align: center;
+}
+
+// popup
+
+// .popup-1,
+.popup-2,
+.popup-3,
+.popup-4,
+.popup-5,
+.popup-6,
+.popup-7,
+.popup-8{
+  display: none;
+}
+.popup-overlay {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 1rem;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  transition: opacity 0.3s;
+  visibility: hidden;
+  opacity: 0;
+  z-index: 99;
+  &:target {
+    visibility: visible;
+    opacity: 1;
+  }
+  .popup-overlay-close {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    cursor: default;
+  }
+}
+.popup-content {
+  position: relative;
+  // margin: 1rem;
+  padding: 1rem;
+  max-width: 380px;
+  width: 100%;
+  text-align: center;
+  font-size: 1.5em;
+  color: white;
+  background-color: #5a391b;
+  background-image: url(../images/sun-mark.png);
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  border: 1px solid #5a391b;
+  box-shadow: 1px 1px 1px #7e5129 inset;
+  border-radius: 10px;
+  .popup-close {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    top: -20px;
+    right: -20px;
+    text-decoration: none;
+    color: #666;
+    background-image: url(../images/close.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    transition: all 0.3s;
+    &:hover {
+      opacity: 1;
+    }
+  }
+}
+
+.yellow-bg{
+  padding: 1rem;
+  color: #5a391b;
+  background-color: #ffe097;
+  border: 1px solid #ffe097;
+  border-radius: 5px;
+  box-shadow: 1px 1px 1px rgba(255, 255, 255, 0.75) inset;
+  form{
+    input[type="text"],
+    input[type="password"]{
+      width: 100%;
+      color: white;
+      background-color: #7e5129;
+      border-color: #7e5129;
+    }
+    label{
+      display: block;
+      padding: 0.25em 0;
+      text-align: initial;
+      color: #5a391b;
+    }
+  }
+  h3{
+    margin: 0;
+    color: #ff7144;
+    font-size: 1.5rem;
+    em{
+      color: #5a391b;
+      font-style: normal;
+    }
+  }
+  ul.gift-list{
+    margin-left: 0;
+    padding: 0;
+    list-style: none;
+    li{
+      padding: 0.5em 0 0.5em 1.5em;
+      text-align: initial;
+      color: #5a391b;
+      font-size: 0.75em;
+      background-image: url(../images/check.png);
+      background-repeat: no-repeat;
+      background-position: center left;
+      border-bottom: 2px dashed white;
+      // background-size: contain;
+    }
+  }
+}
+.content-description{
+    padding: 1em 0;
+    font-size: 0.75em;
+    color: #5a391b;
+    p{
+      margin-top: 0;
+    }
+    a{
+      color: #ff7144;
+    }
+  }
+.games-list{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1em;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  li{
+    a{
+      padding: 0 0.5em;
+      display: block;
+      text-decoration: none;
+      max-width: 120px;
+      background-color: #af6827;
+      border-radius: 5px;
+      border: 1px solid #af6827;
+      box-shadow: 0 1px 1px #ffae5f inset, 0 -1px 1px #ffae5f inset;
+      img{
+        width: 100%;
+      }
+    }
+  }
+}
+.button-row{
+  padding: 0.5em 0 0;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
+  gap: 0.25em;
+}
+.button{
+  padding: 0.45em 0.65em 0.35em;
+  min-width: 5em;
+  // width: 100%;
+  color: white;
+  text-decoration: none;
+  background-color: #5da70e;
+  border-radius: 3em;
+  border: 1px solid #5da70e;
+  box-shadow: 1px 1px 1px rgba(255, 255, 255, 0.75) inset;
+  appearance: none;
+  cursor: pointer;
+  &.black{
+    color: #bf834c;
+    background-color: #341e09;
+    border-color: #341e09;
+    box-shadow: 1px 1px 1px #855225 inset;
+  }
+}
+.reCAPTCHA{
+  margin: 0 auto;
+  padding: 0.5em 0;
+  text-align: center;
+  max-width: 232px;
+  width: 100%;
+  img{
+    width: 100%;
+  }
+}
+
+@import "rwd";
